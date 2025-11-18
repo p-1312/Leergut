@@ -39,4 +39,5 @@ with tab3:
     st.header("Alle Anmeldungen")
     for auf in load_auftraege():
         status_emoji = {"rot": "🔴", "orange": "🟠", "gelb": "🟡", "grün": "🟢"}
+
         st.write(f"{status_emoji.get(auf['status'], '⚫')} **{auf['nr']}** – {auf['lieferant']} – {auf['art']} – {auf['menge']} Stk = {auf['gewicht_gesamt']} kg")
